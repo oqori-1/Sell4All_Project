@@ -104,7 +104,7 @@ Outils utilisés :
 ## 1. Cloner le dépôt
 
 ```bash
-git clone <URL_DU_DEPOT>
+git clone <git@github.com:oqori-1/Sell4All_Project.git>
 ```
 
 ## 2. Accéder au dossier du projet
