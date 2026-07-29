@@ -1,31 +1,32 @@
-# Projet de sélection – Exploration de données avec Python
+# Projet de sélection — Exploration de données avec Python
 
 ## Présentation
 
 Ce projet a été réalisé dans le cadre du processus de sélection du parcours **Développement en Intelligence Artificielle** de YouCode.
 
-L'objectif est d'explorer et de nettoyer un jeu de données clients de l'entreprise fictive **Sell4All** afin de préparer les données pour une future fonctionnalité de recommandation basée sur l'intelligence artificielle.
+L'objectif est d'explorer, d'analyser et de nettoyer les données clients de l'entreprise fictive **Sell4All** afin de préparer ces données pour une future utilisation dans un projet d'intelligence artificielle.
 
 ---
 
-## Objectifs du projet
+# Objectifs du projet
 
-Les tâches réalisées sont les suivantes :
+Les principales tâches réalisées sont :
 
 - Lire le fichier CSV avec Pandas.
-- Explorer les données.
+- Explorer le jeu de données.
 - Afficher un résumé technique des données.
 - Calculer la moyenne et la médiane.
-- Calculer la médiane de l'âge par pays (bonus).
-- Créer un graphique des dépenses par pays.
+- Calculer la médiane de l'âge par pays (Bonus).
+- Créer un graphique des dépenses des clients par pays.
 - Nettoyer les données.
 - Exporter les données nettoyées dans un nouveau fichier CSV.
 
 ---
 
-## Étapes de réalisation
+# Étapes de réalisation
 
 ### Jour 1
+
 - Installation de Miniconda.
 - Installation de Jupyter Notebook.
 - Installation des bibliothèques Pandas et Matplotlib.
@@ -33,122 +34,150 @@ Les tâches réalisées sont les suivantes :
 - Première exploration des données.
 
 ### Jour 2
-- Analyse du jeu de données.
-- Calcul des statistiques (moyenne et médiane).
+
+- Analyse des données.
+- Calcul de la moyenne et de la médiane.
+- Calcul de la médiane de l'âge par pays.
 - Création du graphique des dépenses par pays.
 
 ### Jour 3
+
 - Nettoyage des données.
 - Suppression des doublons.
-- Suppression des clients ayant dépensé moins de 10 €.
-- Export des données nettoyées.
+- Export du fichier CSV nettoyé.
+- Vérification des résultats.
 - Organisation du notebook et rédaction du README.
 
 ---
 
-## Fonctionnalités développées
+# Fonctionnalités développées
 
 - Importation des données avec Pandas.
 - Exploration des données.
 - Analyse statistique.
 - Visualisation avec Matplotlib.
 - Nettoyage des données.
-- Export des données finales au format CSV.
+- Export des données finales.
 
 ---
 
-## Difficultés rencontrées
+# Difficultés rencontrées
 
-Pendant la réalisation de ce projet, plusieurs difficultés ont été rencontrées :
+Je n'ai pas rencontré de difficultés majeures pendant la réalisation du projet.
 
-- Comprendre certaines fonctions de Pandas comme `groupby()` et `drop_duplicates()`.
-- Comprendre les informations affichées par `data.info()`.
-- Organiser le notebook de manière claire.
-
-### Solutions
-
-- Consultation de la documentation officielle de Pandas.
-- Utilisation des ressources fournies dans le sujet.
-- Réalisation de plusieurs tests afin de mieux comprendre le comportement des fonctions.
+Pour mieux comprendre chaque étape, j'ai pris le temps de lire les consignes, de tester les fonctions utilisées et de vérifier les résultats obtenus avant de passer à l'étape suivante.
 
 ---
 
-## Structure du projet
+# Structure du projet
 
-```
-project/
+```text
+sell4all-project/
 │
 ├── dataset-sell4all.csv
 ├── dataset-sell4all-clean.csv
 ├── main.ipynb
-├── README.md
+└── README.md
 ```
 
 ---
 
-## Prérequis
+# Environnement de développement
 
-Avant d'exécuter le projet, il faut disposer de :
+Le projet a été réalisé sous **Linux**.
 
-- Python 3
+Outils utilisés :
+
+- Linux
+- Python
+- Miniconda
 - Jupyter Notebook
 - Pandas
 - Matplotlib
+- Git
+- GitHub
 
 ---
 
-## Installation
+# Installation
 
-Installer les bibliothèques :
-
-```bash
-pip install pandas matplotlib
-```
-
-ou avec Conda :
+## 1. Cloner le dépôt
 
 ```bash
-conda install pandas matplotlib
+git clone <URL_DU_DEPOT>
 ```
 
----
+## 2. Accéder au dossier du projet
 
-## Exécution
+```bash
+cd sell4all-project
+```
 
-1. Ouvrir un terminal.
-2. Se placer dans le dossier du projet.
-3. Lancer Jupyter Notebook.
+## 3. Créer un environnement Conda
+
+```bash
+conda create -n sell4all python=3.13
+```
+
+## 4. Activer l'environnement
+
+```bash
+conda activate sell4all
+```
+
+## 5. Installer les bibliothèques nécessaires
+
+```bash
+conda install pandas matplotlib notebook
+```
+
+## 6. Lancer Jupyter Notebook
 
 ```bash
 jupyter notebook
 ```
 
-4. Ouvrir le fichier `main.ipynb`.
-5. Exécuter les cellules dans l'ordre.
+Puis ouvrir le fichier :
+
+```text
+main.ipynb
+```
+
+et exécuter les cellules dans l'ordre.
 
 ---
 
-## Résultat
+# Résultat
 
-À la fin de l'exécution, un nouveau fichier est généré :
+Après l'exécution du notebook, un nouveau fichier est généré :
 
-```
+```text
 dataset-sell4all-clean.csv
 ```
 
-Ce fichier contient uniquement les colonnes demandées après le nettoyage des données.
+Ce fichier contient uniquement les colonnes suivantes :
+
+- Country
+- Age
+- Gender
+- Customer spendings
+
+Les données ont été nettoyées conformément aux consignes du projet.
 
 ---
 
-## Technologies utilisées
+# Technologies utilisées
 
 - Python
 - Pandas
 - Matplotlib
 - Jupyter Notebook
+- Git
+- GitHub
+- Linux
 
 ---
 
-## Auteur
+# Auteur
 
-Projet réalisé dans le cadre du processus de sélection YouCode.
+Projet réalisé dans le cadre du processus de sélection du parcours **Développement en Intelligence Artificielle** de **YouCode**.
