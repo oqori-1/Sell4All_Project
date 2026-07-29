@@ -104,7 +104,7 @@ Outils utilisés :
 ## 1. Cloner le dépôt
 
 ```bash
-git clone <git@github.com:oqori-1/Sell4All_Project.git>
+git clone git@github.com:oqori-1/Sell4All_Project.git
 ```
 
 ## 2. Accéder au dossier du projet
@@ -116,7 +116,7 @@ cd sell4all-project
 ## 3. Créer un environnement Conda
 
 ```bash
-conda create -n sell4all python=3.13
+conda create -n sell4all python=3.10.20
 ```
 
 ## 4. Activer l'environnement
